@@ -14,10 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::group(['middleware' => 'auth'], function () {
-    Route::post('/short', 'ShortController@index');
+Route::get('u/{slug}', 'ShortController@accessUrl');
+Route::post('/short', 'ShortController@index');
     
-});
 
 Auth::routes();
 

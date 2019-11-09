@@ -12,7 +12,7 @@
                   <
                     <h2 style="color:red">Click Her</h1>
 
-                    <a href="{{$url->url}}" style="color:white" target="_blank">{{$url->short}}</a>
+                    <a href="{{url('u/'.$url->short)}}" style="color:white" target="_blank">{{$url->short}}</a>
                 </div>
                 <!-- /.box-body -->
             </div>
